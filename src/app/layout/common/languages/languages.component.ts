@@ -41,24 +41,24 @@ export class LanguagesComponent implements OnInit, OnDestroy
      */
     ngOnInit(): void
     {
-        // Get the available languages from transloco
-        this.availableLangs = this._translocoService.getAvailableLangs();
+        // // Get the available languages from transloco
+        // this.availableLangs = this._translocoService.getAvailableLangs();
 
-        // Subscribe to language changes
-        this._translocoService.langChanges$.subscribe((activeLang) =>
-        {
-            // Get the active lang
-            this.activeLang = activeLang;
+        // // Subscribe to language changes
+        // this._translocoService.langChanges$.subscribe((activeLang) =>
+        // {
+        //     // Get the active lang
+        //     this.activeLang = activeLang;
 
-            // Update the navigation
-            this._updateNavigation(activeLang);
-        });
+        //     // Update the navigation
+        //     this._updateNavigation(activeLang);
+        // });
 
-        // Set the country iso codes for languages for flags
-        this.flagCodes = {
-            'en': 'us',
-            'tr': 'tr',
-        };
+        // // Set the country iso codes for languages for flags
+        // this.flagCodes = {
+        //     'en': 'us',
+        //     'tr': 'tr',
+        // };
     }
 
     /**

@@ -1,5 +1,5 @@
 <!-- Bar search -->
-<ng-container *ngIf="appearance === 'bar'">
+<!-- <ng-container *ngIf="appearance === 'bar'">
     <button
         mat-icon-button
         *ngIf="!opened"
@@ -39,17 +39,17 @@
                     <mat-option
                         class="group relative mb-1 py-0 px-6 text-md rounded-md hover:bg-gray-100 dark:hover:bg-hover"
                         [routerLink]="result.link"
-                        [value]="result.value">
+                        [value]="result.value"> -->
                         <!-- Contacts -->
-                        <ng-container *ngIf="resultSet.id === 'contacts'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'contacts'">
                             <ng-container *ngTemplateOutlet="contactResult; context: {$implicit: result}"></ng-container>
-                        </ng-container>
+                        </ng-container> -->
                         <!-- Pages -->
-                        <ng-container *ngIf="resultSet.id === 'pages'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'pages'">
                             <ng-container *ngTemplateOutlet="pageResult; context: {$implicit: result}"></ng-container>
-                        </ng-container>
+                        </ng-container> -->
                         <!-- Tasks -->
-                        <ng-container *ngIf="resultSet.id === 'tasks'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'tasks'">
                             <ng-container *ngTemplateOutlet="taskResult; context: {$implicit: result}"></ng-container>
                         </ng-container>
                     </mat-option>
@@ -63,10 +63,10 @@
             <mat-icon [svgIcon]="'heroicons_outline:x-mark'"></mat-icon>
         </button>
     </div>
-</ng-container>
+</ng-container> -->
 
 <!-- Basic search -->
-<ng-container *ngIf="appearance === 'basic'">
+<!-- <ng-container *ngIf="appearance === 'basic'">
     <div class="w-full sm:min-w-80">
         <mat-form-field
             class="w-full"
@@ -93,23 +93,23 @@
             </mat-option>
             <ng-container *ngFor="let resultSet of resultSets; trackBy: trackByFn">
                 <mat-optgroup class="flex items-center mt-2 px-2">
-                    <span class="text-sm font-semibold tracking-wider text-secondary">{{resultSet.label.toUpperCase()}}</span>
-                </mat-optgroup>
+                    <span class="text-sm font-semibold tracking-wider text-secondary">{{resultSet.label.toUpperCase()}}</span> -->
+                <!-- </mat-optgroup>
                 <ng-container *ngFor="let result of resultSet.results; trackBy: trackByFn">
                     <mat-option
                         class="group relative mb-1 py-0 px-6 text-md rounded-md hover:bg-gray-100 dark:hover:bg-hover"
                         [routerLink]="result.link"
-                        [value]="result.value">
+                        [value]="result.value"> -->
                         <!-- Contacts -->
-                        <ng-container *ngIf="resultSet.id === 'contacts'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'contacts'">
                             <ng-container *ngTemplateOutlet="contactResult; context: {$implicit: result}"></ng-container>
-                        </ng-container>
+                        </ng-container> -->
                         <!-- Pages -->
-                        <ng-container *ngIf="resultSet.id === 'pages'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'pages'">
                             <ng-container *ngTemplateOutlet="pageResult; context: {$implicit: result}"></ng-container>
-                        </ng-container>
+                        </ng-container> -->
                         <!-- Tasks -->
-                        <ng-container *ngIf="resultSet.id === 'tasks'">
+                        <!-- <ng-container *ngIf="resultSet.id === 'tasks'">
                             <ng-container *ngTemplateOutlet="taskResult; context: {$implicit: result}"></ng-container>
                         </ng-container>
                     </mat-option>
@@ -117,7 +117,7 @@
             </ng-container>
         </mat-autocomplete>
     </div>
-</ng-container>
+</ng-container> -->
 
 <!-- Contact result template -->
 <ng-template

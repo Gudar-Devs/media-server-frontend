@@ -8,6 +8,27 @@ export const defaultNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
+    },
+    {
+        id   : 'dashboard',
+        title: 'Dashboard',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/dashboard'
+    },
+    {
+        id   : 'devices',
+        title: 'Devices',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/devices'
+    },
+    {
+        id   : 'collections',
+        title: 'Collections',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/collections'
     }
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -26,7 +47,8 @@ export const futuristicNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
-    }
+    },
+    
 ];
 export const horizontalNavigation: FuseNavigationItem[] = [
     {
@@ -35,5 +57,5 @@ export const horizontalNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
-    }
+    },
 ];

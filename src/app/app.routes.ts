@@ -75,6 +75,9 @@ export const appRoutes: Route[] = [
         },
         children: [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.routes')},
+            {path: 'dashboard', loadChildren: () => import('app/modules/admin/dashboard/dashboard.module').then((m) => m.DashboardModule)},
+            {path: 'devices', loadChildren: () => import('app/modules/admin/devices/devices.module').then((m) => m.DevicesModule)},
+            {path: 'collections', loadChildren: () => import('app/modules/admin/collections/collections.module').then((m) => m.CollectionsModule)},
         ]
     }
 ];
